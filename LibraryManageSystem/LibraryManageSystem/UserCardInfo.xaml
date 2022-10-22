@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="LibraryManageSystem.UserCardInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LibraryManageSystem"
+             mc:Ignorable="d">
+    <ScrollViewer>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="500" Width="800">
+            <Label Content="我的借书卡" HorizontalAlignment="Center" Margin="0,15,0,0" VerticalAlignment="Top" Height="40" FontSize="24" FontWeight="Bold"/>
+            <Label x:Name="idL" Content="编号：" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Height="39"/>
+            <Label x:Name="nameL" Content="姓名：" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Height="39"/>
+            <Label x:Name="deptL" Content="部门：" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Height="39"/>
+            <Label x:Name="typeL" Content="身份：" HorizontalAlignment="Center" Margin="0,240,0,0" VerticalAlignment="Top" Height="39"/>
+            <Label x:Name="numL" Content="{Binding Path = num}" HorizontalAlignment="Center" Margin="0,280,0,0" VerticalAlignment="Top" Height="39"/>
+            <Label x:Name="creditL" Content="{Binding Path = credit}" HorizontalAlignment="Center" Margin="0,320,0,0" VerticalAlignment="Top" Height="39"/>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

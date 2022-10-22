@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="LibraryManageSystem.UserControlBorrowInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LibraryManageSystem"
+             mc:Ignorable="d" >
+    <Grid>
+        <DataGrid x:Name="DataGridBorrow" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0" Height="auto" Width="auto" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding ID}" Header="编号"/>
+                <DataGridTextColumn Binding="{Binding reader_ID}" Header="借书证编号"/>
+                <DataGridTextColumn Binding="{Binding book_ID}" Header="书籍编号"/>
+                <DataGridTextColumn Binding="{Binding BorrowDate}" Header="借阅日期"/>
+                <DataGridTextColumn Binding="{Binding PlanDate}" Header="预计归还日期"/>
+                <DataGridTextColumn Binding="{Binding AcutalDate}" Header="实际归还日期"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

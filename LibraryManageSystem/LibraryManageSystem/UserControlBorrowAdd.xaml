@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="LibraryManageSystem.UserControlBorrowAdd"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LibraryManageSystem"
+             mc:Ignorable="d">
+    <ScrollViewer>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="500" Width="800">
+            <Label Content="添加借阅记录" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="40" FontSize="24" FontWeight="Bold"/>
+            <Label Content="借书卡编号" HorizontalAlignment="Center" Margin="-200,160,0,0" VerticalAlignment="Top" Height="24"/>
+            <Label Content="书籍编号" HorizontalAlignment="Center" Margin="-200,200,0,0" VerticalAlignment="Top" Height="24"/>
+            <Label Content="借阅日期" HorizontalAlignment="Center" Margin="-200,240,0,0" VerticalAlignment="Top" Height="25"/>
+            <Label Content="预计归还日期" HorizontalAlignment="Center" Margin="120,240,0,0" VerticalAlignment="Top" Height="25"/>
+            <TextBox x:Name="rIDBox" HorizontalAlignment="Center" Margin="80,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"/>
+            <TextBox x:Name="bIDBox" HorizontalAlignment="Center" Margin="80,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"/>
+
+            <Button Content="添加" HorizontalAlignment="Center" Margin="-100,375,0,0" VerticalAlignment="Top" Cursor="Hand" Click="Button_Click"/>
+            <Button x:Name="multiBtn" Content="批量添加" HorizontalAlignment="Center" Margin="150,375,0,0" VerticalAlignment="Top" Click="multiBtn_Click"/>
+            <DatePicker x:Name="bBox" HorizontalAlignment="Center" Margin="-50,240,0,0" VerticalAlignment="Top"/>
+            <DatePicker x:Name="pBox" HorizontalAlignment="Center" Margin="290,240,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="isReturnBox" Content="是否已归还" HorizontalAlignment="Center" Margin="-170,280,0,0" VerticalAlignment="Top" Click="isReturnBox_Click"/>
+            <Label x:Name="aLabel" Content="实际归还日期" HorizontalAlignment="Center" Margin="120,278,0,0" VerticalAlignment="Top" Height="25" Visibility="Collapsed"/>
+            <DatePicker x:Name="aBox" HorizontalAlignment="Center" Margin="290,278,0,0" VerticalAlignment="Top" Visibility="Collapsed"/>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

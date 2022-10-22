@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="LibraryManageSystem.UserControlReaderUpdate"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LibraryManageSystem"
+             mc:Ignorable="d" >
+    <ScrollViewer>
+        <Grid>
+            <Label Content="信息更改" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="40" Width="105" FontSize="24" FontWeight="Bold"/>
+            <Label Content="借书证编号" HorizontalAlignment="Center" Margin="-550,150,0,0" VerticalAlignment="Top" Height="39"/>
+            <TextBox x:Name="idBox" HorizontalAlignment="Center" Margin="-270,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"  RenderTransformOrigin="0.508,0.852" Cursor="Arrow"/>
+            <Button Content="查询" HorizontalAlignment="Center" Margin="-300,350,0,0" VerticalAlignment="Top" Cursor="Hand" Click="Button_Click"/>
+            <Button x:Name="submitButton" Content="确认更改" HorizontalAlignment="Center" Margin="350,350,0,0" VerticalAlignment="Top" Cursor="Hand" Visibility="Collapsed" Click="submitButton_Click"/>
+            <Label x:Name="nameLabel" Content="姓名" HorizontalAlignment="Center" Margin="100,110,0,0" VerticalAlignment="Top" Height="39" Visibility="Collapsed"/>
+            <Label x:Name="deptLabel" Content="部门" HorizontalAlignment="Center" Margin="100,140,0,0" VerticalAlignment="Top" Height="39" Visibility="Collapsed"/>
+            <Label x:Name="typeLabel" Content="身份" HorizontalAlignment="Center" Margin="100,170,0,0" VerticalAlignment="Top" Height="39" Visibility="Collapsed" />
+            <Label x:Name="numLabel" Content="借阅数量" HorizontalAlignment="Center" Margin="100,200,0,0" VerticalAlignment="Top" Height="39" Visibility="Collapsed"/>
+            <Label x:Name="creditLabel" Content="信用分数" HorizontalAlignment="Center" Margin="100,230,0,0" VerticalAlignment="Top" Height="39" Visibility="Collapsed"/>
+            <TextBox x:Name="nameBox" HorizontalAlignment="Center" Margin="350,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"  Visibility="Collapsed"/>
+            <TextBox x:Name="deptBox" HorizontalAlignment="Center" Margin="350,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Visibility="Collapsed" />
+            <Slider x:Name="sliderN" HorizontalAlignment="Center" VerticalAlignment="Top" Width="190" Value="0" Maximum="10" IsSnapToTickEnabled="True" Height="20" Foreground="#FF2196F3" Margin="375,202,0,0" Visibility="Collapsed"/>
+            <Slider x:Name="sliderC" HorizontalAlignment="Center" VerticalAlignment="Top" Width="190" Value="5" Maximum="5" IsSnapToTickEnabled="True" Height="20" Foreground="#FF2196F3" Margin="375,232,0,0" Visibility="Collapsed"/>
+            <Label x:Name="NLabel" Content="{Binding Value, ElementName=sliderN}" HorizontalAlignment="Center" Margin="170,200,0,0" VerticalAlignment="Top" Visibility="Collapsed"/>
+            <Label x:Name="CLabel" Content="{Binding Value, ElementName=sliderC}" HorizontalAlignment="Center" Margin="170,230,0,0" VerticalAlignment="Top" Visibility="Collapsed"/>
+            <ComboBox x:Name="typeBox" HorizontalAlignment="Center" Margin="190,170,0,0" VerticalAlignment="Top" Width="50" Text="{Binding Name}" DisplayMemberPath="Name"  SelectedValuePath="Value" Visibility="Collapsed"/>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

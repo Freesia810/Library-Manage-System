@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="About.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AccountSetting.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BookQuery.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RegisterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ServerWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SilderArrange.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StatInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UpdatePW.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserBorrowBook.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserBorrowInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserCardInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlBookAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlBookInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlBookRemove.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlBookUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlBorrowAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlBorrowInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlBorrowUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlMenuItem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlReaderAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlReaderInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlReaderMenuItem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlReaderRemove.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlReaderUpdate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserReturnBook.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="About.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AccountSetting.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BookQuery.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RegisterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ServerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SilderArrange.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StatInfo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UpdatePW.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserBorrowBook.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserBorrowInfo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserCardInfo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlBookAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlBookInfo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlBookRemove.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlBookUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlBorrowAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlBorrowInfo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlBorrowUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlMenuItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlReaderAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlReaderInfo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlReaderMenuItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlReaderRemove.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlReaderUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserReturnBook.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

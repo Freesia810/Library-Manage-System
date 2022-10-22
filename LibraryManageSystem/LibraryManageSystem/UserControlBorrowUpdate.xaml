@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="LibraryManageSystem.UserControlBorrowUpdate"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LibraryManageSystem"
+             mc:Ignorable="d">
+    <Grid>
+        <Label Content="信息更改" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="40" Width="105" FontSize="24" FontWeight="Bold"/>
+        <Label Content="借阅编号" HorizontalAlignment="Center" Margin="-550,150,0,0" VerticalAlignment="Top" Height="39"/>
+        <TextBox x:Name="idBox" HorizontalAlignment="Center" Margin="-270,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"  RenderTransformOrigin="0.508,0.852" Cursor="Arrow"/>
+        <Button Content="查询" HorizontalAlignment="Center" Margin="-300,350,0,0" VerticalAlignment="Top" Cursor="Hand" Click="Button_Click"/>
+        <Button x:Name="submitButton" Content="确认更改" HorizontalAlignment="Center" Margin="350,350,0,0" VerticalAlignment="Top" Cursor="Hand" Click="submitButton_Click" Visibility="Collapsed"/>
+        <Label x:Name="readerLabel" Content="借书证编号" HorizontalAlignment="Center" Margin="100,110,0,0" VerticalAlignment="Top" Height="39" Visibility="Collapsed" />
+        <Label x:Name="bookLabel" Content="书籍编号" HorizontalAlignment="Center" Margin="100,140,0,0" VerticalAlignment="Top" Height="39" Visibility="Collapsed"/>
+        <Label x:Name="bLabel" Content="借阅日期" HorizontalAlignment="Center" Margin="100,170,0,0" VerticalAlignment="Top" Height="25" Visibility="Collapsed"/>
+        <Label x:Name="pLabel" Content="预计归还日期" HorizontalAlignment="Center" Margin="100,200,0,0" VerticalAlignment="Top" Height="25" Visibility="Collapsed"/>
+        <TextBox x:Name="readerBox" HorizontalAlignment="Center" Margin="390,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Visibility="Collapsed"/>
+        <TextBox x:Name="bookBox" HorizontalAlignment="Center" Margin="390,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Visibility="Collapsed" />
+        <DatePicker x:Name="bBox" HorizontalAlignment="Center" Margin="300,170,0,0" VerticalAlignment="Top" Visibility="Collapsed"/>
+        <DatePicker x:Name="pBox" HorizontalAlignment="Center" Margin="300,200,0,0" VerticalAlignment="Top" Visibility="Collapsed"/>
+        <CheckBox x:Name="isReturnBox" Content="是否已归还" HorizontalAlignment="Center" Margin="100,230,0,0" VerticalAlignment="Top" Click="isReturnBox_Click" Visibility="Collapsed"/>
+        <Label x:Name="aLabel" Content="实际归还日期" HorizontalAlignment="Center" Margin="300,228,0,0" VerticalAlignment="Top" Height="25" Visibility="Collapsed"/>
+        <DatePicker x:Name="aBox" HorizontalAlignment="Center" Margin="500,228,0,0" VerticalAlignment="Top" Visibility="Collapsed"/>
+    </Grid>
+</UserControl>

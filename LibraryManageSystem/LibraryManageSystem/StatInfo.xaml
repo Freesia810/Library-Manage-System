@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="LibraryManageSystem.StatInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LibraryManageSystem"
+             mc:Ignorable="d" >
+    <Grid>
+        <Label Content="统计信息" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
+        <Label x:Name="totalNumLabel" Content="{Binding Path = total}" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="atvNumLabel" Content="{Binding Path = atv}" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="brwNumLabel" Content="{Binding Path = brw}" HorizontalAlignment="Center" Margin="0,180,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="cardNumLabel" Content="{Binding Path = card}" HorizontalAlignment="Center" Margin="0,220,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="tNumLabel" Content="{Binding Path = tea}" HorizontalAlignment="Center" Margin="0,260,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="sNumLabel" Content="{Binding Path = stu}" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" FontSize="14"/>
+    </Grid>
+</UserControl>
